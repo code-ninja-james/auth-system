@@ -22,7 +22,7 @@ app.get('/api/user/profile',verifyToken,(req,res)=>{
 
 app.use('/api/users', authRoutes);
 
-mongoose.connect('mongodb+srv://j33my:PaRwgUhxbwzdV97b@passportauth.eki46.mongodb.net/auth_system?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('Api Key', {useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => {
         app.listen(port, () => console.log('Server is running'));
     })
